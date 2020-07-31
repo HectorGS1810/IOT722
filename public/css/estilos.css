@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+/*font-family: 'Sedgwick Ave Display', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+/*font-family: 'Yeon Sung', cursive;*/
+
+:root {
+    --color-header: #008b00;
+    --color-body: #09af00;
+    --color-hover: #94929e;
+    --color-fuente: #defabb;
+    --altura-etiqueta: 0.7rem;
+    --ancho-nav: 200px;
+  }
+
+
+header{
+    display: flex;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    margin-bottom: 30px;
+    background-color: var(--color-header);
+    color: var(--color-fuente);
+    justify-content: flex-end;
+    align-items: center;
+}
+
+body{
+    margin: 0;
+    font-family: 'Yeon Sung', cursive;
+    font-style: italic;
+    background-color: var(--color-body);
+}
+
+h1{
+    margin: 0 auto 0 0;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    font-size: 2rem;
+    margin-right: auto;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+h2{
+  margin: 0 auto 0 0;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    font-size: 1rem;
+    margin-right: auto;
+    font-family: 'Yeon Sung', cursive;
+    color: var(--color-fuente);
+}
+
+
+
+mi-footer{
+    font-family: 'Yeon Sung', cursive;
+    color: var(--color-fuente);
+    position: flex;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-header);
+    padding: 15px;
+    text-align: center;
+}
+
+/*Estilos para el control de luz (range)*/
+input[type=range] {
+  width: 20%;
+  margin: 6.45px 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  background: #009600;
+  border: 2px solid #010001;
+  border-radius: 25px;
+  width: 100%;
+  height: 7.1px;
+  cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb {
+  margin-top: -8.45px;
+  width: 20px;
+  height: 20px;
+  background: #006e00;
+  border: 1.5px solid #000000;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #00c900;
+}
+input[type=range]::-moz-range-track {
+  background: #009600;
+  border: 2px solid #010001;
+  border-radius: 25px;
+  width: 100%;
+  height: 7.1px;
+  cursor: pointer;
+}
+input[type=range]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #006e00;
+  border: 1.5px solid #000000;
+  border-radius: 50px;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  border-width: 6.45px 0;
+  color: transparent;
+  width: 100%;
+  height: 7.1px;
+  cursor: pointer;
+}
+input[type=range]::-ms-fill-lower {
+  background: #006300;
+  border: 2px solid #010001;
+  border-radius: 50px;
+}
+input[type=range]::-ms-fill-upper {
+  background: #009600;
+  border: 2px solid #010001;
+  border-radius: 50px;
+}
+input[type=range]::-ms-thumb {
+  width: 20px;
+  height: 20px;
+  background: #006e00;
+  border: 1.5px solid #000000;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 0px;
+  /*Needed to keep the Edge thumb centred*/
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #009600;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #00c900;
+}
+/*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+how to remove the virtical space around the range input in IE*/
+@supports (-ms-ime-align:auto) {
+  /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+  input[type=range] {
+    margin: 0;
+    /*Edge starts the margin from the thumb, not the track as other browsers do*/
+  }
+}
+
+
+input[type="checkbox"]{
+	height: 1.25rem;
+	width: 1.25rem;
+	background: rgba(241, 245, 248, 1);
+	transition: background 250ms;
+	border: 1px solid black;
+	border-radius: 0.125rem;
+}
+
+input[type="checkbox"]:checked{
+  color: rgba(0, 255, 27, 1);
+  border-color: black;
+}

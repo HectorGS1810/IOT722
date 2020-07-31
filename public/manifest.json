@@ -1,0 +1,25 @@
+{
+    "short_name": "iot722",
+    "name": "Simulación de IoT",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#55ee02",
+    "theme_color": "#008f00",
+    "icons": [
+      {
+        "src": "img/icono-2048.png",
+        "sizes": "2048x2048",
+        "type": "image/png"
+      },
+      {
+        "src": "img/icono-1024.png",
+        "sizes": "1024x1024",
+        "type": "image/png"
+      },
+      {
+        "src": "img/icono-256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+      }
+    ]
+  }
